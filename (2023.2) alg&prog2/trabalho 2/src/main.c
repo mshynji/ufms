@@ -44,7 +44,7 @@ int main() {
 
 		switch(toupper(escolha)) {
 			case 'A': // Adicionar livro
-				scanf(" %d \"%100[^\"]\" \"%50[^\"]\" %d %d", &id, titulo, autor, &anoPublicacao, &quantidade);
+				scanf(" %d \"%99[^\"]\" \"%49[^\"]\" %d %d", &id, titulo, autor, &anoPublicacao, &quantidade);
 				adicionarLivro(listaLivros, id, titulo, autor, anoPublicacao, quantidade);
 				break;
 
