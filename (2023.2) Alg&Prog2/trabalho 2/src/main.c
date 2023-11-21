@@ -19,6 +19,10 @@ int main() {
 		return -1; // Erro code
 	}
 
+	// Definindo explicitamente que o próximo nó depois da cabeça está vazio, para evitar problemas
+	listaLivros->prox     = NULL;
+	listaExemplares->prox = NULL;
+
 	// Parte principal
 	int run = 1; // Função que vai verificar se o usuário deseja continuar a execução do código
 	
